@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 
 export default function LoginView({ onLoginSuccess, onStartDemo }) {
+  const API_BASE = import.meta.env.VITE_API_URL || 'https://studentos-backend-zpz8.onrender.com';
+
   // Modes: 'signin' | 'signup_step1' | 'signup_step2' | 'signup_success' | 'forgot_password'
   const [authMode, setAuthMode] = useState('signin');
   const [showPassword, setShowPassword] = useState(false);
@@ -72,7 +74,7 @@ export default function LoginView({ onLoginSuccess, onStartDemo }) {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(`${API_BASE}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: loginEmail, password: loginPassword, rememberMe })
@@ -122,7 +124,7 @@ export default function LoginView({ onLoginSuccess, onStartDemo }) {
     setLoginPassword('admin123');
 
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(`${API_BASE}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: 'admin@student.os', password: 'admin123', rememberMe: true })

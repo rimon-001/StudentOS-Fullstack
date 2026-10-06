@@ -1,5 +1,6 @@
 // Using relative path so Vite proxy routes calls to your backend on both web and mobile
-const BASE_URL = '/api';
+const API_HOST = import.meta.env.VITE_API_URL || 'https://studentos-backend-zpz8.onrender.com';
+const BASE_URL = `${API_HOST}/api`;
 
 export async function apiRequest(endpoint, options = {}) {
   const token = localStorage.getItem('studentos_token');
