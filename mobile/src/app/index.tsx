@@ -15,7 +15,7 @@ import {
 import { WebView } from 'react-native-webview';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const WEB_APP_URL = 'http://192.168.76.37:5173';
+const WEB_APP_URL = 'https://studentos-virid.vercel.app';
 
 export default function App() {
   const webViewRef = useRef<WebView>(null);
