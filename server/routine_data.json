@@ -1,0 +1,113 @@
+{
+  "Saturday": [],
+  "Sunday": [
+    {
+      "id": "r_1790578263342whxv",
+      "day": "Sunday",
+      "code": "PHY101",
+      "name": "Physics I",
+      "time": "2:30 - 4:00",
+      "room": "701A",
+      "teacher": "KI",
+      "isLab": false,
+      "type": "Theory"
+    }
+  ],
+  "Monday": [
+    {
+      "id": "r_17905782633421bgv",
+      "day": "Monday",
+      "code": "PHY101",
+      "name": "Physics I",
+      "time": "8:30 - 10:00",
+      "room": "914",
+      "teacher": "KI",
+      "isLab": false,
+      "type": "Theory"
+    },
+    {
+      "id": "r_1790578263342w42s",
+      "day": "Monday",
+      "code": "SE212",
+      "name": "Software Requirement Specification",
+      "time": "11:30 - 1:00",
+      "room": "701A",
+      "teacher": "KBB",
+      "isLab": false,
+      "type": "Theory"
+    }
+  ],
+  "Tuesday": [
+    {
+      "id": "r_1790578263342hub6",
+      "day": "Tuesday",
+      "code": "SE121",
+      "name": "Structured Programming",
+      "time": "2:30 - 4:00",
+      "room": "101A",
+      "teacher": "MTC",
+      "isLab": false,
+      "type": "Theory"
+    },
+    {
+      "id": "r_17905782633428ejx",
+      "day": "Tuesday",
+      "code": "MAT101",
+      "name": "Mathematics I",
+      "time": "4:00 - 5:30",
+      "room": "813A",
+      "teacher": "MSIM",
+      "isLab": false,
+      "type": "Theory"
+    }
+  ],
+  "Wednesday": [
+    {
+      "id": "r_1790578263342q6ch",
+      "day": "Wednesday",
+      "code": "SE212",
+      "name": "Software Requirement Specification",
+      "time": "10:00 - 11:30",
+      "room": "712B",
+      "teacher": "KBB",
+      "isLab": false,
+      "type": "Theory"
+    },
+    {
+      "id": "r_1790578263342fzyf",
+      "day": "Wednesday",
+      "code": "MAT101",
+      "name": "Mathematics I",
+      "time": "2:30 - 4:00",
+      "room": "Annex - 308",
+      "teacher": "MSIM",
+      "isLab": false,
+      "type": "Theory"
+    }
+  ],
+  "Thursday": [
+    {
+      "id": "r_1790578263342rfhc",
+      "day": "Thursday",
+      "code": "SE121",
+      "name": "Structured Programming",
+      "time": "8:30 - 10:00",
+      "room": "802",
+      "teacher": "MTC",
+      "isLab": false,
+      "type": "Theory"
+    },
+    {
+      "id": "r_1790578263342l47k",
+      "day": "Thursday",
+      "code": "SE122",
+      "name": "Structured Programming",
+      "time": "10:00 - 11:30",
+      "room": "903",
+      "teacher": "MTC",
+      "isLab": true,
+      "type": "Lab"
+    }
+  ],
+  "Friday": []
+}

@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: studentos
+    env: node
+    plan: free
+    buildCommand: npm install && cd server && npm install && cd .. && npm run build
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5001
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GEMINI_API_KEY
+        sync: false
+    disk:
+      name: studentos-data
+      mountPath: /var/data
+      sizeGB: 1
